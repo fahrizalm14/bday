@@ -1,5 +1,6 @@
-import { Box, Button } from "@chakra-ui/react";
 import "../styles/ButtonBlob.css";
+
+import { Box, Button } from "@chakra-ui/react";
 
 function ButtonBlob({ children, blobColor = "white", ...rest }) {
   return (

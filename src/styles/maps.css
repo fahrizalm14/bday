@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+  map-responsive {
+    background-color: rgb(9, 9, 9);
+  }
+}

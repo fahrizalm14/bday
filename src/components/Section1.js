@@ -1,9 +1,11 @@
-import { Flex, Stack, Text, Heading, Image } from "@chakra-ui/react";
-import bgImageSection1 from "../resources/images/bg1.jpg";
-import unicornImg from "../resources/images/unicornImg.jpg";
-import Button from "./ButtonBlob";
-import OpenMailIcon from "../resources/icons/OpenMailIcon";
+import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 
+import OpenMailIcon from "../resources/icons/OpenMailIcon";
+import bgImageSection1 from "../resources/images/bg1.jpg";
+import unicornImg from "../resources/images/unicornCelebrate.png";
+import Button from "./ButtonBlob";
+
+// import unicornRainbow from "../resources/images/unicornRainbow.png";
 export default function Section1() {
   return (
     <Flex
@@ -17,21 +19,21 @@ export default function Section1() {
       // paddingInline={["16px", "16px", "16px", "116px", "116px"]}
       height="740px"
       // backgroundAttachment="fixed"
-      backgroundPosition={["center"]}
+      backgroundPosition={["bottom"]}
       backgroundSize={["cover"]}
       id="home"
     >
       <Stack
         justifyContent="center"
         marginInline="auto"
+        marginTop="50px"
         alignItems={["center", "center", "center"]}
         textAlign={["center"]}
         width={["320px", "320px", "400px", "430px", "430px"]}
         marginBlockStart={["0", "0", "0", "-100px", "-100px"]}
         backgroundColor={"#F5C9E2"}
-        borderRadius={"15"}
+        borderRadius={"50"}
       >
-
         <Text
           fontWeight={"extrabold"}
           color="candyPink.900"
@@ -48,20 +50,7 @@ export default function Section1() {
         >
           Birthday Pastry
         </Text>
-        <Image
-          // objectFit="cover"
-          // boxShadow="lg"
-          // border="solid 1px white"
-          // position="absolute"
-          // borderRadius="full"
-          // height="120px"
-          width="65%"
-          // backgroundColor="red.100"
-          // bottom="-46px"
-          // transform="translateX(-50%)"
-          // left="50%"
-          src={unicornImg}
-        />
+        <Image width="75%" src={unicornImg} />
 
         <Text
           fontSize="16px"
@@ -74,26 +63,24 @@ export default function Section1() {
         >
           Hi Aneska, you are invited!
         </Text>
-        {/* <Heading
-          as="h2"
-          fontSize={["3rem", "3rem", "4rem", "5rem", "5rem"]}
-          lineHeight="1.2em"
-          zIndex="2"
-        >
-          Ice Cream <br /> Cakes
-        </Heading>
-        <Text
-          fontSize="16px"
-          lineHeight="30px"
-          letterSpacing="0.2px"
-          marginBlockEnd="36px !important"
-        >
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry <br />
-          with dummmy text. Graphics, Designing, Branding, Development
-        </Text> */}
-        <Button
-        ><OpenMailIcon />Open Invitation</Button>
+        <Button>
+          <OpenMailIcon />
+          Open Invitation
+        </Button>
+        {/* <Image
+          width="auto"
+          height={["180px", "180px", "180px", "230px", "230px"]}
+          position="absolute"
+          src={unicornRainbow}
+          right={["-5%", "-5%", "19%", "5%", "25%"]}
+          bottom={["35px", "35px", "35px", "15px", "15px"]}
+        /> */}
+        {/* <Image
+          width="auto"
+          height="20px"
+          visibility="hidden"
+          src={unicornRainbow}
+        /> */}
       </Stack>
     </Flex>
   );
