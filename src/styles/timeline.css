@@ -29,28 +29,26 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Mrs Saint Delafield', cursive;
+  font-family: "Mrs Saint Delafield", cursive;
 }
 .wrapper {
   padding: 2rem;
   border-radius: 15px;
 }
 h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
 }
 .sessions {
   border-radius: 12px;
   position: relative;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 1.4rem;
   text-align: start;
 }
 li {
   padding-bottom: 1.5rem;
   border-left: 1px solid #abaaed;
   position: relative;
-  padding-left: 20px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 li:last-child {
   border: 0px;
@@ -72,7 +70,6 @@ li:before {
 .time {
   color: #2a2839;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
   @include mobile-and-up {
     font-size: 0.9rem;
   }
@@ -86,6 +83,6 @@ p {
   line-height: 1.5;
   margin-top: 0.4rem;
   @include mobile-only {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
 }

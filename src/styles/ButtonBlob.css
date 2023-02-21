@@ -43,3 +43,9 @@
     transform: translateZ(0) scale(1.4);
   }
 }
+
+@supports (filter: url("#splash")) {
+  .square-animation {
+    animation: wipe-enter 15s 1;
+  }
+}

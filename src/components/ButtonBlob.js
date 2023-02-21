@@ -2,10 +2,10 @@ import "../styles/ButtonBlob.css";
 
 import { Box, Button } from "@chakra-ui/react";
 
-function ButtonBlob({ children, blobColor = "white", ...rest }) {
+function ButtonBlob({ children, blobColor = "white", onClick, ...rest }) {
   return (
     <>
-      <Button className="blob-btn" variant="blob" {...rest}>
+      <Button className="blob-btn" variant="blob" onClick={onClick} {...rest}>
         {children}
         <Box
           as="span"

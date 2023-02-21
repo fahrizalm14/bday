@@ -19,3 +19,7 @@ html {
 .smt {
   scroll-margin-block-start: 90px !important;
 }
+
+.name-s {
+  font-weight: bolder;
+}

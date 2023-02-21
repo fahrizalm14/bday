@@ -1,6 +1,6 @@
 import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+
 import CloudIcon from "../resources/icons/CloudIcon.svg";
-import ContainerSocialNetworks from "./ContainerSocialNetwokrs";
 import Logo from "./Logo";
 
 export default function Footer({ data }) {
@@ -43,8 +43,9 @@ export default function Footer({ data }) {
             whiteSpace="pre-wrap"
             fontFamily="'Mrs Saint Delafield', cursive;"
             fontWeight="extrabold"
+            marginTop={"5px"}
           >
-            Chelsea's Pastry
+            Chelsea ParThree
           </Text>
         </Stack>
       </Stack>

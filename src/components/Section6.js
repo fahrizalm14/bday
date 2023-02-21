@@ -1,31 +1,9 @@
-import { Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
+import { Flex, Heading, Stack } from "@chakra-ui/react";
+
 import bgImageSection6 from "../resources/images/bgImageIce6.jpg";
-import EventPricingCard from "./EventPricingCard";
+import OrderForm from "./OrderForm";
 
-const cards = {
-  standard: {
-    category: "standard",
-    price: "36",
-    services: [
-      "Party Decoration",
-      "Design Cake",
-      "Home Delivery",
-      "Ballon Decoration",
-    ],
-  },
-  premium: {
-    category: "premium",
-    price: "56",
-    services: [
-      "Decoration",
-      "Wedding Cakes",
-      "Waiter Service",
-      "Flower Decoration",
-    ],
-  },
-};
-
-export default function Section6() {
+export default function Section6({ name }) {
   return (
     <Flex
       position="relative"
@@ -35,7 +13,7 @@ export default function Section6() {
       as="section"
       paddingBlock="120px"
       height={["auto", "auto", "auto", "740px", "740px"]}
-      backgroundAttachment="fixed"
+      // backgroundAttachment="fixed"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
       id="pricing"
@@ -43,24 +21,21 @@ export default function Section6() {
       className="smt"
       paddingInline={["16px", "16px", "16px", "116px", "116px"]}
     >
-      <Stack alignItems="center" textAlign="center">
-        <Heading as="h3" fontSize="3rem" color="white">
-        Fun Parts
-        </Heading>
-        <SimpleGrid gridRowGap="40px" columns={[1, 1, 1, 2, 2]}>
-          <EventPricingCard
-            cards={cards.standard}
-            // borderRight={[
-            //   "none",
-            //   "none",
-            //   "none",
-            //   "dashed 1px white",
-            //   "dashed 1px white",
-            // ]}
-          />
-          {/* <EventPricingCard cards={cards.premium} /> */}
-        </SimpleGrid>
-      </Stack>
+      <div
+        data-aos="zoom-in" //Here you can use any of the AOS animations
+      >
+        <Stack alignItems="center" textAlign="center">
+          <Heading
+            as="h3"
+            fontSize="3rem"
+            color="white"
+            fontFamily={"'Mrs Saint Delafield', cursive"}
+          >
+            Reservation
+          </Heading>
+          <OrderForm name={name} />
+        </Stack>
+      </div>
     </Flex>
   );
 }

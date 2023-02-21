@@ -1,29 +1,18 @@
 import "../styles/timeline.css";
 
-import { Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
-import bgImageSection3 from "../resources/images/candyPink.jpg";
-import imageProfile from "../resources/images/profileReview.jpg";
-import PercentageCircle from "./PercentageCircle";
-
-const ourSpeciality = [
-  {
-    name: "Days",
-    percentage: 80,
-  },
-  {
-    name: "Hours",
-    percentage: 90,
-  },
-  {
-    name: "Minutes",
-    percentage: 60,
-  },
-  {
-    name: "Seconds",
-    percentage: 60,
-  },
-];
+import img1 from "../resources/images/1.jpeg";
+import img2 from "../resources/images/2.jpeg";
+import img3 from "../resources/images/3.jpeg";
+import img4 from "../resources/images/4.jpeg";
+import img5 from "../resources/images/5.jpeg";
+import img6 from "../resources/images/6.jpeg";
+import img7 from "../resources/images/7.jpeg";
+import img8 from "../resources/images/8.jpeg";
+import img9 from "../resources/images/9.jpeg";
+import bgImageSection3 from "../resources/images/bgImageIce4.jpg";
+import cake from "../resources/images/cake.png";
 
 export default function Section3() {
   return (
@@ -41,7 +30,7 @@ export default function Section3() {
       backgroundSize="cover"
       paddingBlock="120px"
       paddingInline={["0", "0", "0", "116px", "116px"]}
-    // backgroundAttachment="fixed"
+      // backgroundAttachment="fixed"
     >
       <Stack
         textTransform="capitalize"
@@ -51,102 +40,270 @@ export default function Section3() {
         backgroundColor="rgba(255, 255, 255, 0.5)"
         borderRadius="15px"
         padding="20px"
+        id="scroll-line"
       >
-        <Stack >
+        <Stack>
           <div className="container-line">
             <div className="wrapper">
-              {/* <Text fontSize="42px" fontWeight="extrabold" textAlign="center" color="candyPink.900">
-                Chelsea's Journey
-              </Text> */}
-              <Heading as="h4" fontSize="40px" textTransform="capitalize" color="candyPink.900">
-                Chelsea's Journey
-              </Heading>
+              <div
+                data-aos="fade-up" //Here you can use any of the AOS animations
+              >
+                <Heading
+                  as="h3"
+                  fontSize="3rem"
+                  color="candyPink.900"
+                  fontFamily={"'Mrs Saint Delafield', cursive"}
+                >
+                  Chelsea's Journey
+                </Heading>
+              </div>
               <ul className="sessions">
                 <li>
-                  <p>
-                    Chelsea's
-                  </p>
-                  <Image
-                    objectFit="cover"
-                    boxShadow="lg"
-                    border="solid 1px white"
-                    borderRadius="full"
-                    height="120px"
-                    width="120px"
-                    backgroundColor="red.100"
-                    src={imageProfile}
-                  />
+                  <div
+                    data-aos="zoom-in" //Here you can use any of the AOS animations
+                  >
+                    <p>Here is when I was born</p>
+                  </div>
+                  <div
+                    data-aos="zoom-in-left" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      className="square"
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img1}
+                    />
+                  </div>
+                  <div
+                    data-aos="zoom-in-right" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img2}
+                    />
+                  </div>
+                  <div
+                    data-aos="zoom-in-left" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img3}
+                    />
+                  </div>
                 </li>
                 <li>
-                  <p>
-                    Chelsea's Birthday
-                  </p>
-                  <Image
-                    objectFit="cover"
-                    boxShadow="lg"
-                    border="solid 1px white"
-                    borderRadius="full"
-                    height="120px"
-                    width="120px"
-                    backgroundColor="red.100"
-                    src={imageProfile}
-                  />
+                  <div
+                    data-aos="zoom-in" //Here you can use any of the AOS animations
+                  >
+                    <p>and this is my 1st Birthday</p>
+                  </div>
+                  <div
+                    data-aos="zoom-in-right" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img4}
+                    />
+                  </div>
+                  <div
+                    data-aos="zoom-in-left" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img5}
+                    />
+                  </div>
+                  <div
+                    data-aos="zoom-in-right" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img6}
+                    />
+                  </div>
                 </li>
                 <li>
-                  <p>
-                    Chelsea's Birthday
-                  </p>
-                  <Image
-                    objectFit="cover"
-                    boxShadow="lg"
-                    border="solid 1px white"
-                    borderRadius="full"
-                    height="120px"
-                    width="120px"
-                    backgroundColor="red.100"
-                    src={imageProfile}
-                  />
+                  <div
+                    data-aos="zoom-in" //Here you can use any of the AOS animations
+                  >
+                    <p>and this was my 2nd Birthday</p>
+                  </div>
+                  <div
+                    data-aos="zoom-in-left" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img7}
+                    />
+                  </div>
+
+                  <div
+                    data-aos="zoom-in-right" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img8}
+                    />
+                  </div>
+
+                  <div
+                    data-aos="zoom-in-left" //Here you can use any of the AOS animations
+                  >
+                    <Image
+                      objectFit="cover"
+                      boxShadow="lg"
+                      border="solid 1px white"
+                      height="120px"
+                      width="120px"
+                      backgroundColor="red.100"
+                      src={img9}
+                    />
+                  </div>
                 </li>
                 <li>
-                  <p>And now you ....</p>
+                  <div
+                    data-aos="zoom-in" //Here you can use any of the AOS animations
+                  >
+                    <p>
+                      And now you are invited to <br />
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </Stack>
-        <Text
-          as="span"
-          fontFamily="heading"
-          fontSize="body"
-          lineHeight="1.2"
-          background="candyPink.900"
-          color="white"
-          padding="5px"
+        <div
+          data-aos="fade-up" //Here you can use any of the AOS animations
         >
-          Remind Me
-        </Text>
-        <Flex
-          justifyContent="center"
-          paddingBlockStart="4px"
-          gridGap="12px"
-          flexWrap="wrap"
-        >
-          {ourSpeciality.map((speciality, key) => (
-            <PercentageCircle
-              key={key}
-              title={speciality.name}
-              percentage={0}
-            />
-          ))}
-        </Flex>
-        <Stack>
-          <iframe
-            name="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng"
-          />
-        </Stack>
-      </Stack>
+          <Stack
+            boxShadow="lg"
+            border="solid 1px white"
+            padding={"5px"}
+            paddingTop="15px"
+            paddingBottom="15px"
+            background={"white"}
+            borderRadius="10px"
+          >
+            <Heading
+              fontWeight="extrabold"
+              fontSize={"3rem"}
+              color="candyPink.900"
+              fontFamily={"'Mrs Saint Delafield', cursive"}
+              marginBottom="-20px"
+            >
+              Chelsea Bday
+            </Heading>
+            <Image width="50%" src={cake} alignSelf="center" />
+            <Heading
+              fontWeight="extrabold"
+              fontSize={"1.3rem"}
+              color="candyPink.900"
+            >
+              SUNDAY, 5 March 2023
+            </Heading>
+            <Text
+              color="candyPink.900"
+              textDecoration={"underline"}
+              fontSize="1rem"
+            >
+              Posin Bakery & Cafe
+            </Text>
+            <Text fontSize="0.8rem">
+              Jl Menteri Supeno No.6, Mugasari, Semarang Sel
+            </Text>
 
+            <div data-aos="zoom-in">
+              <iframe
+                marginHeight="0"
+                marginWidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.529488342481!2d110.4179067!3d-6.9936868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9da9322fca9f8642!2sPosin%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sid!4v1677015741946!5m2!1sen!2sid"
+                title="Posin Bakery &amp; Cafe"
+                aria-label="Posin Bakery &amp; Cafe"
+                frameBorder="0"
+              ></iframe>
+            </div>
+
+            <div data-aos="zoom-in">
+              <Button
+                alignSelf={"center"}
+                textTransform="capitalize"
+                color="charlestonGreen.900"
+                backgroundColor="candyPink.900"
+                blobcolor="candyPink.900"
+                textColor={"white"}
+                _before="none"
+                _hover={{ color: "white" }}
+                _focus={{ color: "white" }}
+                onClick={() => {
+                  window.open(
+                    "https://goo.gl/maps/2JVTD4guWNY6Nei68",
+                    "_blank"
+                  );
+                }}
+              >
+                Get Directions
+              </Button>
+            </div>
+          </Stack>
+        </div>
+        {/* <Text
+            as="span"
+            fontFamily="heading"
+            fontSize="body"
+            lineHeight="1.2"
+            background="candyPink.900"
+            color="white"
+            padding="5px"
+          >
+            Remind Me
+          </Text>
+          <Stack>
+            <iframe
+              name="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng"
+            />
+          </Stack> */}
+      </Stack>
     </Flex>
   );
 }

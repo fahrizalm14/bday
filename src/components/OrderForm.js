@@ -2,21 +2,21 @@ import {
   FormControl,
   Input,
   InputGroup,
+  Select,
   Textarea,
   useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
+
 import Button from "./ButtonBlob";
 
-const inputs = [
-  { placeholder: "Name", type: "text", name: "name" },
-];
+const inputs = [{ placeholder: "Name", type: "text", name: "name" }];
 
-export default function OrderForm() {
+export default function OrderForm({ name: names }) {
   const toast = useToast();
 
   const [formValues, setFormValues] = useState({
-    name: "",
+    name: names,
     email: "",
     subject: "",
     message: "",
@@ -78,22 +78,55 @@ export default function OrderForm() {
             }}
           />
         ))}
-      <Textarea
-        paddingBlockStart="20px"
-        placeholder="Give your wish..."
-        name="message"
-        required
-        value={formValues.message}
-        onChange={handleChange}
-        marginBlockEnd="40px"
-        variant="flushed"
-        borderRadius="none"
-        _placeholder={{ color: "white" }}
-        _focus={{
-          borderColor: "candyPink.900",
-          boxShadow: " 0px 1px 0px 0px #EF7474",
-        }}
-      />
+        <Select
+          placeholder="Would you like to come to my party?"
+          _focus={{
+            borderColor: "candyPink.900",
+            boxShadow: " 0px 1px 0px 0px #EF7474",
+          }}
+          _autofill={{
+            textFillColor: "#ffff",
+            boxShadow: "0 0 0px 1000px #EF7474 inset",
+            borderRadius: "6px",
+            borderColor: "candyPink.900",
+          }}
+        >
+          <option value="option1">Yes</option>
+          <option value="option2">No</option>
+        </Select>
+        <Select
+          placeholder="Who are you going with?"
+          _focus={{
+            borderColor: "candyPink.900",
+            boxShadow: " 0px 1px 0px 0px #EF7474",
+          }}
+          _autofill={{
+            textFillColor: "#ffff",
+            boxShadow: "0 0 0px 1000px #EF7474 inset",
+            borderRadius: "6px",
+            borderColor: "candyPink.900",
+          }}
+        >
+          <option value="option1">Mommy</option>
+          <option value="option2">Daddy</option>
+          <option value="option2">Partner</option>
+        </Select>
+        <Textarea
+          paddingBlockStart="20px"
+          placeholder="Give your wish..."
+          name="message"
+          required
+          value={formValues.message}
+          onChange={handleChange}
+          marginBlockEnd="40px"
+          variant="flushed"
+          borderRadius="none"
+          _placeholder={{ color: "white" }}
+          _focus={{
+            borderColor: "candyPink.900",
+            boxShadow: " 0px 1px 0px 0px #EF7474",
+          }}
+        />
       </InputGroup>
       <Button
         textTransform="capitalize"
