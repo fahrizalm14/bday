@@ -9,9 +9,7 @@ import { useState } from "react";
 import Button from "./ButtonBlob";
 
 const inputs = [
-  { placeholder: "Your Name", type: "text", name: "name" },
-  { placeholder: "Your Email", type: "email", name: "email" },
-  { placeholder: "Your Subject", type: "text", name: "subject" },
+  { placeholder: "Name", type: "text", name: "name" },
 ];
 
 export default function OrderForm() {
@@ -67,7 +65,7 @@ export default function OrderForm() {
             onChange={handleChange}
             placeholder={input.placeholder}
             _placeholder={{ color: "white" }}
-            paddingInline="6px"
+            // paddingInline="6px"
             _focus={{
               borderColor: "candyPink.900",
               boxShadow: " 0px 1px 0px 0px #EF7474",
@@ -80,10 +78,9 @@ export default function OrderForm() {
             }}
           />
         ))}
-      </InputGroup>
       <Textarea
         paddingBlockStart="20px"
-        placeholder="Your message..."
+        placeholder="Give your wish..."
         name="message"
         required
         value={formValues.message}
@@ -97,6 +94,7 @@ export default function OrderForm() {
           boxShadow: " 0px 1px 0px 0px #EF7474",
         }}
       />
+      </InputGroup>
       <Button
         textTransform="capitalize"
         color="charlestonGreen.900"
@@ -107,7 +105,7 @@ export default function OrderForm() {
         _hover={{ color: "white" }}
         _focus={{ color: "white" }}
       >
-        send message
+        send
       </Button>
     </FormControl>
   );

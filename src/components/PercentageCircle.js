@@ -7,7 +7,7 @@ export default function PercentageCircle({ title, percentage }) {
       <CircularProgress
         capIsRound="true"
         value={percentage}
-        size="60px"
+        size="45px"
         color="candyPink.900"
         thickness={"4px"}
         trackColor="candyPink.900"
@@ -16,7 +16,7 @@ export default function PercentageCircle({ title, percentage }) {
           {percentage}
         </CircularProgressLabel>
       </CircularProgress>
-      <Center fontSize="body" fontWeight="extrabold" color="candyPink.900">
+      <Center fontSize="body" color="candyPink.900">
         {title}
       </Center>
     </Stack>

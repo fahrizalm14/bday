@@ -17,7 +17,7 @@ export default function EventPricingCard({ cards, ...rest }) {
       textAlign="center"
       {...rest}
     >
-      <Heading
+      {/* <Heading
         as="h3"
         borderBottom="dashed 1px #FFFFFF"
         fontSize="26px"
@@ -25,17 +25,17 @@ export default function EventPricingCard({ cards, ...rest }) {
         paddingBlockEnd="4px"
       >
         {cards.category}
-      </Heading>
-      <Text paddingBlockStart="27px">
+      </Heading> */}
+      {/* <Text paddingBlockStart="27px">
         Lorem dolor sit amet, consectetur <br />
         adipiscing elit.
-      </Text>
-      <Heading paddingBlockStart="24px" fontSize="38px" as="h6">
+      </Text> */}
+      {/* <Heading paddingBlockStart="24px" fontSize="38px" as="h6">
         ${cards.price}
         <Text as="span" fontSize="14px">
           /Per Event
         </Text>
-      </Heading>
+      </Heading> */}
       <UnorderedList
         marginInlineStart="0 !important"
         styleType="none"
@@ -52,9 +52,9 @@ export default function EventPricingCard({ cards, ...rest }) {
         width="100px"
         marginInline="auto"
       >
-        <Button height="44px" textTransform="capitalize">
+        {/* <Button height="44px" textTransform="capitalize">
           choose
-        </Button>
+        </Button> */}
       </Flex>
     </Stack>
   );

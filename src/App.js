@@ -10,21 +10,39 @@ import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Section9 from "./components/Section9";
 import theme from "./theme";
+import blackpink from "./resources/blackpink.mp3"
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const audio = new Audio(blackpink);
+  const [isPlay, setIsPlay] = useState(false)
+
+  const play = () => {
+    if (!isPlay) {
+      audio.loop = true;
+      audio.play()
+      setIsPlay(true)
+    }
+  }
+
+
+  // console.log(seconds)
   return (
     <ChakraProvider resetCSS theme={theme}>
+      {/* <div onClick={() => { play() }}> */}
       <Layout>
+        {/* <audio src={blackpink} onCanplay={canplayEvent} onEnded={endedEvent} /> */}
         <Section1 />
         {/* <SectionTwo /> */}
         <Section3 />
-        <Section4 />
-        <Section5 />
+        {/* <Section4 /> */}
+        {/* <Section5 /> */}
         <Section6 />
-        <Section7 />
         <Section8 />
-        <Section9 />
+        <Section7 />
+        {/* <Section9 /> */}
       </Layout>
+      {/* </div> */}
     </ChakraProvider>
   );
 }

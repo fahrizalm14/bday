@@ -5,7 +5,7 @@ import RatingCard from "./RatingCard";
 const ratingCard = [
   {
     description:
-      "Ligias patisserie is the best patisserie, all the staff are highly trained and there is no dessert that is not excellent",
+      "Happy birthday Cutties Bebev !!! 😍😍😍😍😍😍 See u soon! So exited to be there! ☺☺☺",
     created_at: "14-October-2021",
   },
 ];

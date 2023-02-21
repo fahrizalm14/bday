@@ -45,20 +45,20 @@ export default function Section6() {
     >
       <Stack alignItems="center" textAlign="center">
         <Heading as="h3" fontSize="3rem" color="white">
-          Event Pricing
+        Fun Parts
         </Heading>
         <SimpleGrid gridRowGap="40px" columns={[1, 1, 1, 2, 2]}>
           <EventPricingCard
             cards={cards.standard}
-            borderRight={[
-              "none",
-              "none",
-              "none",
-              "dashed 1px white",
-              "dashed 1px white",
-            ]}
+            // borderRight={[
+            //   "none",
+            //   "none",
+            //   "none",
+            //   "dashed 1px white",
+            //   "dashed 1px white",
+            // ]}
           />
-          <EventPricingCard cards={cards.premium} />
+          {/* <EventPricingCard cards={cards.premium} /> */}
         </SimpleGrid>
       </Stack>
     </Flex>

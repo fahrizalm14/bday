@@ -29,18 +29,21 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Mrs Saint Delafield', cursive;
 }
 .wrapper {
   padding: 2rem;
   border-radius: 15px;
 }
 h1 {
-  font-size: 1.1rem;
-  font-family: sans-serif;
+  font-size: 3rem;  
 }
 .sessions {
   border-radius: 12px;
   position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: start;
 }
 li {
   padding-bottom: 1.5rem;
@@ -80,7 +83,6 @@ li:before {
 }
 p {
   color: #4f4f4f;
-  font-family: sans-serif;
   line-height: 1.5;
   margin-top: 0.4rem;
   @include mobile-only {

@@ -9,12 +9,13 @@ export default function RatingCard({ data }) {
       boxShadow="lg"
       alignItems="center"
       backgroundColor="white"
-      height="280px"
+      height="200px"
       maxWidth="374px"
       minWidth="300px"
       position="relative"
       paddingBlockStart="30px"
       paddingInline="26px"
+      marginX='10px'
     >
       <Text color="charlestonGreen.900" textAlign="center" lineHeight="30px">
         {data.description}
@@ -26,12 +27,27 @@ export default function RatingCard({ data }) {
         textAlign="center"
         dateTime={new Date(data.created_at)}
         color="charlestonGreen.900"
+        fontSize="22px"
+        marginInline="auto"
+      >
+        <i>
+
+          -- Aneska --
+        </i>
+      </Text>
+      <Text
+        as="time"
+        display="block"
+        marginBlockStart="20px"
+        textAlign="center"
+        dateTime={new Date(data.created_at)}
+        color="charlestonGreen.900"
         fontSize="14px"
         marginInline="auto"
       >
-        <i>{data.created_at}</i>
+        {data.created_at}
       </Text>
-      <Flex
+      {/* <Flex
         color="charlestonGreen.900"
         width="100px"
         gridGap="4px"
@@ -41,8 +57,8 @@ export default function RatingCard({ data }) {
         {[1, 2, 3, 4, 5].map((star) => (
           <StarIcon key={star} />
         ))}
-      </Flex>
-      <Image
+      </Flex> */}
+      {/* <Image
         objectFit="cover"
         boxShadow="lg"
         border="solid 1px white"
@@ -55,7 +71,7 @@ export default function RatingCard({ data }) {
         transform="translateX(-50%)"
         left="50%"
         src={imageProfile}
-      />
+      /> */}
     </Stack>
   );
 }

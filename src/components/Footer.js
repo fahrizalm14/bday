@@ -26,24 +26,25 @@ export default function Footer({ data }) {
       <Stack objectFit="cover" alignItems="center">
         <Logo
           width={["116px", "116px", "130px", "200px", "200px"]}
-          height={["66px", "66px", "70px", "120px", "120px"]}
+          height={["auto"]}
           variant="white"
         />
-        <Stack marginBlockStart="46px !important">
-          <Flex gridGap="18px" justifyContent="center">
+        <Stack>
+          {/* <Flex gridGap="18px" justifyContent="center">
             <ContainerSocialNetworks />
-          </Flex>
+            </Flex> */}
           <Text
             textAlign="center"
-            fontSize="14px"
+            fontSize="40px"
             color="white"
             lineHeight="1.4rem"
-            marginBlockStart="28px !important"
+            marginBlockStart="5px !important"
             justifyContent="center"
             whiteSpace="pre-wrap"
+            fontFamily="'Mrs Saint Delafield', cursive;"
+            fontWeight="extrabold"
           >
-            {data.copyRight} <br />
-            {data.dev}
+            Chelsea's Pastry
           </Text>
         </Stack>
       </Stack>

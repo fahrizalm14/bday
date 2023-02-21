@@ -1,8 +1,8 @@
 import "../styles/timeline.css";
 
-import { Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
-import bgImageSection3 from "../resources/images/bdayBg.jpg";
+import bgImageSection3 from "../resources/images/candyPink.jpg";
 import imageProfile from "../resources/images/profileReview.jpg";
 import PercentageCircle from "./PercentageCircle";
 
@@ -33,32 +33,39 @@ export default function Section3() {
       backgroundImage={`url(${bgImageSection3})`}
       color="white"
       width="full"
-      // className="smt"
+      className="smt"
       height={["auto", "auto", "auto", "auto", "auto"]}
+      justifyContent="center"
       // backgroundAttachment="fixed"
-      // backgroundPosition={["center", "center", "center", "inherit", "inherit"]}
+      backgroundPosition={["center", "center", "center", "inherit", "inherit"]}
       backgroundSize="cover"
       paddingBlock="120px"
       paddingInline={["0", "0", "0", "116px", "116px"]}
-      // backgroundAttachment="fixed"
+    // backgroundAttachment="fixed"
     >
       <Stack
         textTransform="capitalize"
         textAlign={["center"]}
-        // marginInline={["auto", "auto", "auto", "0", "0"]}
+        marginInline={["auto", "auto", "auto", "0", "0"]}
         marginX="2.5"
-        backgroundColor="rgba(255, 255, 255, 0.8)"
+        backgroundColor="rgba(255, 255, 255, 0.5)"
         borderRadius="15px"
         padding="20px"
       >
-        <Stack textAlign={["start"]}>
+        <Stack >
           <div className="container-line">
             <div className="wrapper">
-              <Text fontSize="22px" textAlign="center" color="candyPink.900">
+              {/* <Text fontSize="42px" fontWeight="extrabold" textAlign="center" color="candyPink.900">
                 Chelsea's Journey
-              </Text>
+              </Text> */}
+              <Heading as="h4" fontSize="40px" textTransform="capitalize" color="candyPink.900">
+                Chelsea's Journey
+              </Heading>
               <ul className="sessions">
                 <li>
+                  <p>
+                    Chelsea's
+                  </p>
                   <Image
                     objectFit="cover"
                     boxShadow="lg"
@@ -69,12 +76,11 @@ export default function Section3() {
                     backgroundColor="red.100"
                     src={imageProfile}
                   />
-                  <p>
-                    Dolore labore ad elit sit sint elit in labore labore aute id
-                    ullamco.
-                  </p>
                 </li>
                 <li>
+                  <p>
+                    Chelsea's Birthday
+                  </p>
                   <Image
                     objectFit="cover"
                     boxShadow="lg"
@@ -85,12 +91,11 @@ export default function Section3() {
                     backgroundColor="red.100"
                     src={imageProfile}
                   />
-                  <p>
-                    Nisi cillum ad velit nostrud sunt pariatur proident labore
-                    cillum officia et mollit id.
-                  </p>
                 </li>
                 <li>
+                  <p>
+                    Chelsea's Birthday
+                  </p>
                   <Image
                     objectFit="cover"
                     boxShadow="lg"
@@ -101,23 +106,9 @@ export default function Section3() {
                     backgroundColor="red.100"
                     src={imageProfile}
                   />
-                  <p>
-                    Exercitation duis occaecat nostrud in consectetur ex et
-                    mollit irure nostrud voluptate sit consequat.
-                  </p>
                 </li>
                 <li>
-                  <Image
-                    objectFit="cover"
-                    boxShadow="lg"
-                    border="solid 1px white"
-                    borderRadius="full"
-                    height="120px"
-                    width="120px"
-                    backgroundColor="red.100"
-                    src={imageProfile}
-                  />
-                  <p>How can I feel sleepy again?😵</p>
+                  <p>And now you ....</p>
                 </li>
               </ul>
             </div>
@@ -148,7 +139,14 @@ export default function Section3() {
             />
           ))}
         </Flex>
+        <Stack>
+          <iframe
+            name="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng"
+          />
+        </Stack>
       </Stack>
+
     </Flex>
   );
 }

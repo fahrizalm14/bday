@@ -26,12 +26,8 @@ export default function Section8() {
         gridGap="16px"
       >
         <Heading as="h4" fontSize="40px" textTransform="capitalize">
-          place your order
+          Place your wishes
         </Heading>
-        <Text lineHeight="28px">
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          <br /> industry with dummmy text
-        </Text>
         <OrderForm />
       </Stack>
     </Flex>
