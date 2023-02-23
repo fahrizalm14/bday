@@ -30,7 +30,7 @@ export default function Section3() {
       backgroundSize="cover"
       paddingBlock="120px"
       paddingInline={["0", "0", "0", "116px", "116px"]}
-      // backgroundAttachment="fixed"
+    // backgroundAttachment="fixed"
     >
       <Stack
         textTransform="capitalize"
@@ -242,6 +242,18 @@ export default function Section3() {
               SUNDAY, 5 March 2023
             </Heading>
             <Text
+              fontSize={"0.95rem"}
+              marginTop={"-25px"}
+            >
+              11.00 AM until the end
+            </Text>
+            <Text
+              fontWeight="extrabold"
+              fontSize={"0.9rem"}
+            >
+              Dresscode: Pastel Color
+            </Text>
+            <Text
               color="candyPink.900"
               textDecoration={"underline"}
               fontSize="1rem"
@@ -253,14 +265,18 @@ export default function Section3() {
             </Text>
 
             <div data-aos="zoom-in">
-              <iframe
-                marginHeight="0"
-                marginWidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.529488342481!2d110.4179067!3d-6.9936868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9da9322fca9f8642!2sPosin%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sid!4v1677015741946!5m2!1sen!2sid"
-                title="Posin Bakery &amp; Cafe"
-                aria-label="Posin Bakery &amp; Cafe"
-                frameBorder="0"
-              ></iframe>
+              <Stack
+                alignSelf="center">
+
+                <iframe
+                  marginHeight="0"
+                  marginWidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.529488342481!2d110.4179067!3d-6.9936868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9da9322fca9f8642!2sPosin%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sid!4v1677015741946!5m2!1sen!2sid"
+                  title="Posin Bakery &amp; Cafe"
+                  aria-label="Posin Bakery &amp; Cafe"
+                  frameBorder="0"
+                ></iframe>
+              </Stack>
             </div>
 
             <div data-aos="zoom-in">
