@@ -11,7 +11,7 @@ import img6 from "../resources/images/6.jpeg";
 import img7 from "../resources/images/7.jpeg";
 import img8 from "../resources/images/8.jpeg";
 import img9 from "../resources/images/9.jpeg";
-import bgImageSection3 from "../resources/images/bgImageIce4.jpg";
+import bgImageSection3 from "../resources/images/bgImageIce7.jpg";
 import cake from "../resources/images/cake.png";
 
 export default function Section3() {
@@ -28,16 +28,16 @@ export default function Section3() {
       // backgroundAttachment="fixed"
       backgroundPosition={["center", "center", "center", "inherit", "inherit"]}
       backgroundSize="cover"
-      paddingBlock="120px"
-      paddingInline={["0", "0", "0", "116px", "116px"]}
-    // backgroundAttachment="fixed"
+      // paddingBlock="120px"
+      // paddingInline={["0", "0", "0", "116px", "116px"]}
+      // backgroundAttachment="fixed"
     >
       <Stack
-        textTransform="capitalize"
+        // textTransform="capitalize"
         textAlign={["center"]}
         marginInline={["auto", "auto", "auto", "0", "0"]}
-        marginX="2.5"
-        backgroundColor="rgba(255, 255, 255, 0.5)"
+        // marginX="2.5"
+        // backgroundColor="rgba(255, 255, 255, 0.5)"
         borderRadius="15px"
         padding="20px"
         id="scroll-line"
@@ -48,12 +48,7 @@ export default function Section3() {
               <div
                 data-aos="fade-up" //Here you can use any of the AOS animations
               >
-                <Heading
-                  as="h3"
-                  fontSize="3rem"
-                  color="candyPink.900"
-                  fontFamily={"'Mrs Saint Delafield', cursive"}
-                >
+                <Heading as="h3" fontSize="2.5rem" color="white">
                   Chelsea's Journey
                 </Heading>
               </div>
@@ -218,78 +213,83 @@ export default function Section3() {
           <Stack
             boxShadow="lg"
             border="solid 1px white"
-            padding={"5px"}
+            // padding={"5px"}
             paddingTop="15px"
-            paddingBottom="15px"
-            background={"white"}
+            // paddingBottom="15px"
+            background={"rgba(255, 255, 255, 0.5)"}
             borderRadius="10px"
           >
-            <Heading
-              fontWeight="extrabold"
-              fontSize={"3rem"}
-              color="candyPink.900"
-              fontFamily={"'Mrs Saint Delafield', cursive"}
-              marginBottom="-20px"
-            >
-              Chelsea Bday
-            </Heading>
+            <div data-aos="zoom-in">
+              <Heading
+                fontSize={"2.5rem"}
+                fontWeight="extrabold"
+                color="#F0B5B6"
+                fontFamily={'"Tangerine", cursive'}
+              >
+                Chelsea Parthree
+              </Heading>
+              <Heading
+                // fontWeight="extrabold"
+                fontSize={"1rem"}
+                color="#F0B5B6"
+                fontFamily="'Cinzel', serif"
+              >
+                SUNDAY, 5 March 2023
+              </Heading>
+            </div>
             <Image width="50%" src={cake} alignSelf="center" />
-            <Heading
-              fontWeight="extrabold"
-              fontSize={"1.3rem"}
-              color="candyPink.900"
-            >
-              SUNDAY, 5 March 2023
-            </Heading>
-            <Text
-              fontSize={"0.95rem"}
-              marginTop={"-25px"}
-            >
-              11.00 AM until the end
-            </Text>
-            <Text
-              fontWeight="extrabold"
-              fontSize={"0.9rem"}
-            >
-              Dresscode: Pastel Color
-            </Text>
-            <Text
+            <div data-aos="zoom-in">
+              <Text
+                color="#F0B5B6"
+                textDecoration={"underline"}
+                fontSize="1rem"
+                fontFamily="'Cinzel', serif"
+              >
+                Posin Bakery & Cafe
+              </Text>
+              <Text
+                fontSize="0.8rem"
+                color="#50C1CC"
+                fontFamily="'Cinzel', serif"
+                marginX="2.5rem"
+              >
+                Jl Menteri Supeno No.6, Mugasari, Semarang Selatan
+              </Text>
+              <Text
+                color="#50C1CC"
+                fontFamily="'Cinzel', serif"
+                fontWeight="extrabold"
+                fontSize={"0.8rem"}
+              >
+                *Dresscode: Pastel Color
+              </Text>
+            </div>
+            {/* <Text
               color="candyPink.900"
               textDecoration={"underline"}
               fontSize="1rem"
+              fontFamily="'Cinzel', serif"
             >
               Posin Bakery & Cafe
             </Text>
-            <Text fontSize="0.8rem">
+            <Text
+              fontSize="0.8rem"
+              color="#4D4F58"
+              fontFamily="'Cinzel', serif"
+            >
               Jl Menteri Supeno No.6, Mugasari, Semarang Sel
-            </Text>
-
-            <div data-aos="zoom-in">
-              <Stack
-                alignSelf="center">
-
-                <iframe
-                  marginHeight="0"
-                  marginWidth="0"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.529488342481!2d110.4179067!3d-6.9936868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9da9322fca9f8642!2sPosin%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sid!4v1677015741946!5m2!1sen!2sid"
-                  title="Posin Bakery &amp; Cafe"
-                  aria-label="Posin Bakery &amp; Cafe"
-                  frameBorder="0"
-                ></iframe>
-              </Stack>
-            </div>
-
+            </Text> */}
             <div data-aos="zoom-in">
               <Button
                 alignSelf={"center"}
                 textTransform="capitalize"
-                color="charlestonGreen.900"
-                backgroundColor="candyPink.900"
+                backgroundColor="#FF95B9"
                 blobcolor="candyPink.900"
                 textColor={"white"}
                 _before="none"
                 _hover={{ color: "white" }}
                 _focus={{ color: "white" }}
+                fontFamily="'Cinzel', serif"
                 onClick={() => {
                   window.open(
                     "https://goo.gl/maps/2JVTD4guWNY6Nei68",
@@ -299,6 +299,18 @@ export default function Section3() {
               >
                 Get Directions
               </Button>
+            </div>
+            <div data-aos="zoom-in">
+              <Stack alignSelf="center">
+                <iframe
+                  marginHeight="0"
+                  marginWidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.529488342481!2d110.4179067!3d-6.9936868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9da9322fca9f8642!2sPosin%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sid!4v1677015741946!5m2!1sen!2sid"
+                  title="Posin Bakery &amp; Cafe"
+                  aria-label="Posin Bakery &amp; Cafe"
+                  frameBorder="0"
+                ></iframe>
+              </Stack>
             </div>
           </Stack>
         </div>

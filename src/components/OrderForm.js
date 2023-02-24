@@ -131,13 +131,10 @@ export default function OrderForm({ name: names }) {
       </InputGroup>
       <Button
         textTransform="capitalize"
-        color="charlestonGreen.900"
+        color="white"
         backgroundColor="white"
         blobColor="candyPink.900"
         type="submit"
-        _before="none"
-        _hover={{ color: "white" }}
-        _focus={{ color: "white" }}
       >
         send
       </Button>

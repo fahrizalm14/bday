@@ -18,7 +18,7 @@ function ButtonBlob({ children, blobColor = "white", onClick, ...rest }) {
           height="full"
           borderRadius="3xl"
           // background="transparent"
-          background={"candyPink.900"}
+          background={"#FF95B9"}
         >
           <Box
             position="relative"

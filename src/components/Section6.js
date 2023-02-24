@@ -1,6 +1,6 @@
 import { Flex, Heading, Stack } from "@chakra-ui/react";
 
-import bgImageSection6 from "../resources/images/bgImageIce6.jpg";
+import bgImageSection6 from "../resources/images/bgImageIce.jpg";
 import OrderForm from "./OrderForm";
 
 export default function Section6({ name }) {
@@ -11,7 +11,7 @@ export default function Section6({ name }) {
       color="white"
       width="full"
       as="section"
-      paddingBlock="120px"
+      paddingBlock="40px"
       height={["auto", "auto", "auto", "740px", "740px"]}
       // backgroundAttachment="fixed"
       backgroundPosition={["top", "top", "top", "center", "center"]}
@@ -25,12 +25,7 @@ export default function Section6({ name }) {
         data-aos="zoom-in" //Here you can use any of the AOS animations
       >
         <Stack alignItems="center" textAlign="center">
-          <Heading
-            as="h3"
-            fontSize="3rem"
-            color="white"
-            fontFamily={"'Mrs Saint Delafield', cursive"}
-          >
+          <Heading as="h3" fontSize="3rem" color="white">
             Reservation
           </Heading>
           <OrderForm name={name} />

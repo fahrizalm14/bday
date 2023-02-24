@@ -1,6 +1,6 @@
 import { Flex, Heading, Stack } from "@chakra-ui/react";
 
-import bgImageSection8 from "../resources/images/bgImageIce8.jpg";
+import bgImageSection8 from "../resources/images/bgImageIce4.jpg";
 import RatingCard from "./RatingCard";
 
 const ratingCard = [
@@ -30,7 +30,7 @@ export default function Section8() {
       backgroundSize="cover"
       id="orderNow"
       justifyContent={["center", "center", "center", "flex-end", "flex-end"]}
-      paddingBlock="120px"
+      paddingBlock="40px"
       paddingInline={["20px", "20px", "20px", "116px", "116px"]}
     >
       <Stack
@@ -42,12 +42,7 @@ export default function Section8() {
         <div
           data-aos="fade-up" //Here you can use any of the AOS animations
         >
-          <Heading
-            as="h3"
-            fontSize="3rem"
-            color="white"
-            fontFamily={"'Mrs Saint Delafield', cursive"}
-          >
+          <Heading as="h3" fontSize="3rem" color="white">
             Wishes
           </Heading>
         </div>

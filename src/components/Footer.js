@@ -41,8 +41,7 @@ export default function Footer({ data }) {
             marginBlockStart="5px !important"
             justifyContent="center"
             whiteSpace="pre-wrap"
-            fontFamily="'Mrs Saint Delafield', cursive;"
-            fontWeight="extrabold"
+            fontFamily='"Tangerine", cursive;'
             marginTop={"5px"}
           >
             Chelsea ParThree

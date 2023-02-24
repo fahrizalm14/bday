@@ -1,12 +1,12 @@
 export default function OpenMailIcon() {
   return (
     <svg
-    aria-hidden="true"
-    data-prefix="fal"
-    data-icon="cocktail"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 576 512"
-    className="prefix__svg-inline--fa prefix__fa-cocktail prefix__fa-w-18 prefix__fa-3x"
+      aria-hidden="true"
+      data-prefix="fal"
+      data-icon="cocktail"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 576 512"
+      className="prefix__svg-inline--fa prefix__fa-cocktail prefix__fa-w-18 prefix__fa-3x"
     >
       <path
         fill="none"

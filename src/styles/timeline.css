@@ -29,7 +29,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
 }
 .wrapper {
   padding: 2rem;
@@ -41,12 +41,12 @@ h1 {
 .sessions {
   border-radius: 12px;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 2.1rem;
   text-align: start;
 }
 li {
   padding-bottom: 1.5rem;
-  border-left: 1px solid #abaaed;
+  border-left: 1px solid #50c1cc;
   position: relative;
   padding-left: 10px;
 }
@@ -55,13 +55,13 @@ li:last-child {
   padding-bottom: 0;
 }
 li:before {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background: white;
-  border: 1px solid #4e5ed3;
-  box-shadow: 3px 3px 0px #bab5f8;
-  box-shadow: 3px 3px 0px #bab5f8;
+  border: 1px solid #50c1cc;
+  box-shadow: 3px 3px 0px #a9a7aa;
+  box-shadow: 3px 3px 0px #a9a7aa;
   border-radius: 50%;
   position: absolute;
   left: -10px;
@@ -69,7 +69,7 @@ li:before {
 }
 .time {
   color: #2a2839;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   @include mobile-and-up {
     font-size: 0.9rem;
   }
@@ -79,9 +79,10 @@ li:before {
   }
 }
 p {
-  color: #4f4f4f;
-  line-height: 1.5;
+  color: #ffffff;
+  /* line-height: 1.5; */
   margin-top: 0.4rem;
+  font-weight: 500;
   @include mobile-only {
     font-size: 1rem;
   }
